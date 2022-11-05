@@ -10,5 +10,7 @@ Block::Block(int width, int height, std::string name, int index){
 }
 
 void Block::Swap(){
-	std::swap(this->height, this->width);
+	int temp = this->height;
+	this->height = this->width;
+	this->width = temp;
 }
